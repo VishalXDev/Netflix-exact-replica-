@@ -1,0 +1,246 @@
+/* Media Queries for Responsiveness */
+
+/* For Mobile Devices (max-width 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    top: 10px;
+  }
+
+  .navbar select,
+  .navbar button {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 0;
+  }
+
+  .navbar img {
+    height: 1.8rem;
+    margin-left: 1rem;
+  }
+
+  .hero-main {
+    font-size: 35px;
+    background-color: transparent;
+  }
+
+  .hero-sub {
+    font-size: 24px;
+    background-color: transparent;
+    color: transparent;
+  }
+
+  .hero-offer {
+    font-size: 12px;
+    background-color: transparent;
+    color: transparent;
+  }
+
+  .email-input-container input {
+    font-size: 10px;
+    padding: 7px 20px;
+  }
+
+  .start-button {
+    font-size: 9px;
+    padding: 5px 15px;
+  }
+
+  .slider-container {
+    width: 100vw;
+    top: 70vh;
+  }
+
+  .slider-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  footer {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For Tablets (max-width 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .pause-button {
+    left: 80vw; /* Adjust button position for smaller screens */
+    top: 75vh; /* Adjust button position for smaller screens */
+    width: 50px; /* Adjust width for smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+  }
+  .navbar button {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+  .slider-container {
+    width: 90vw;
+    top: 60vh;
+  }
+  .navbar select {
+    font-size: 12px;
+  }
+
+  .hero-main {
+    font-size: 40px;
+  }
+
+  .hero-sub {
+    font-size: 28px;
+  }
+
+  .email-input-container input {
+    font-size: 12px;
+    padding: 7px 60px 8px 14px;
+  }
+
+  .start-button {
+    font-size: 12px;
+    padding: 5px 18px;
+  }
+
+  .slider-container {
+    width: 90vw;
+    top: 60vh;
+  }
+
+  .slider-image {
+    width: 40%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  footer {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For Desktop (min-width 1024px) */
+@media (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .slider-container {
+    width: 80vw;
+    top: 5vh;
+  }
+  .navbar button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .navbar select {
+    font-size: 17px;
+  }
+
+  .hero-main {
+    font-size: 45px;
+  }
+
+  .hero-sub {
+    font-size: 32px;
+  }
+
+  .email-input-container input {
+    font-size: 14px;
+    padding: 7px 18px 8px 14px;
+  }
+
+  .start-button {
+    font-size: 13px;
+    padding: 8px 9px;
+  }
+
+  .slider-container {
+    width: 80vw;
+    top: 50vh;
+  }
+
+  .slider-image {
+    width: 21vh;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  footer {
+    padding:4px;
+    max-width: 60vw;
+  }
+
+  .footer {
+    width: 86vw;
+        left: 36px;
+        position: absolute;
+  }
+}
+.section-divider {
+  left: 3.2rem;
+}
+.slider-imgage {
+  width: 20vh;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .slider-container {
+    width: 90vw;
+  }
+
+  .slider-image {
+    width: 45%;
+    height: 30vh;
+  }
+
+  .sec-container {
+    top: 75rem;
+    margin-left: 5rem;
+  }
+
+  .sec-container img {
+    height: 25vh;
+    right: 5rem;
+  }
+
+  .third-container {
+    flex-direction: column;
+    top: 80rem;
+    gap: 10px;
+    width: 90vw;
+  }
+
+  .third-container .box1,
+  .third-container .box2,
+  .third-container .box3,
+  .third-container .box4 {
+    width: 80%;
+    margin: 0 auto;
+    right: 0;
+  }
+}
+.footer-item ul {
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  gap: 15px;
+}
+
+.footer-item ul li {
+  flex: 1 0 100%; /* Ensure each li takes full width on small screens */
+}

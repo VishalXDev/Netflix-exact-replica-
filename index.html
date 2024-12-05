@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Watch unlimited movies, TV shows, and more on Netflix India. Start your subscription now!"
+    />
+    <meta
+      property="og:title"
+      content="Netflix India – Watch Movies and TV Shows Online"
+    />
+    <meta
+      property="og:description"
+      content="Unlimited movies, TV shows, and more. Watch now!"
+    />
+    <meta property="og:image" content="assets/og-image.jpg" />
+    <meta property="og:url" content="https://www.netflix.com/in" />
+
+    <meta
+      name="keywords"
+      content="Netflix, Movies, TV Shows, Streaming, India"
+    />
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="mediaquarry.css" />
+    <script src="net.js" defer></script>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <img src="assets/logo.png" alt="Netflix Logo" />
+        <select id="language-select" lang="en">
+          <option value="en-IN" selected="selected">English</option>
+          <option value="hi-IN">हिन्दी</option>
+        </select>
+        <button>Sign Up</button>
+      </div>
+
+      <div class="hero-section">
+        <div class="image-container">
+          <video
+            id="background-video"
+            muted
+            autoplay
+            preload="auto"
+            loop
+            playsinline
+            poster="assets/poster-image.jpg"
+            aria-label="Background video showcasing our website's features"
+          >
+            <source src="assets/homepage.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <figcaption>Unlimited movies, TV</figcaption>
+          <figcaption>shows and more</figcaption>
+          <figcaption>Starts at 149. Cancel at any time.</figcaption>
+        </div>
+        <div class="up">
+          Ready to watch? Enter your email to create or restart your membership
+        </div>
+        <div class="email-input-container">
+          <input
+            id="email-input"
+            type="email"
+            placeholder="Enter your email to get started"
+            required
+          />
+          <button class="start-button">Get Started&gt;</button>
+        </div>
+        <button class="pause-button" type="button" aria-label="Pause Video">
+          <!-- The icon will be set dynamically here -->
+        </button>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Trending Now</h2>
+      <section>
+        <div class="slider-container">
+          <div class="slider" id="slider">
+            <img src="assets/side1.webp" alt="Image 1" class="slider-image" />
+            <img src="assets/side2.webp" alt="Image 2" class="slider-image" />
+            <img src="assets/side3.webp" alt="Image 3" class="slider-image" />
+            <img src="assets/side4.webp" alt="Image 4" class="slider-image" />
+            <img src="assets/side5.webp" alt="Image 5" class="slider-image" />
+            <img src="assets/side6.webp" alt="Image 6" class="slider-image" />
+            <img src="assets/side7.webp" alt="Image 7" class="slider-image" />
+            <img src="assets/side8.webp" alt="Image 8" class="slider-image" />
+          </div>
+        </div>
+      </section>
+
+      <div class="sec-container">
+        <figcaption class="sec-text">Only on Netflix</figcaption>
+        <img src="assets/secslide1.webp" alt="image1" /><a
+          href="https://google.in"
+        ></a>
+        <img src="assets/secslide2.webp" alt="image2" /><a
+          href="https://google.in"
+        ></a>
+        <img src="assets/secslide (1).webp" alt="image3" /><a
+          href="https://google.in"
+        ></a>
+        <img src="assets/secslide (2).webp" alt="image4" /><a
+          href="https://google.in"
+        ></a>
+        <img src="assets/secslide (3).webp" alt="image5" />
+        <a href="https://google.in"></a>
+        <img src="assets/secslide (4).webp" alt="image6" /><a
+          href="https://google.in"
+        ></a>
+        <img src="assets/secslide (5).webp" alt="image7" /><a
+          href="https://google.in"
+        ></a>
+      </div>
+      <section class="credit">
+        <p class="bt-p">Create or restart your membership</p>
+        <button class="bt-c">Get Started</button>
+      </section>
+      <div class="third-container">
+        <figcaption class="third-text">More reasons to join</figcaption>
+        <div class="box1">Stories tailored to your taste</div>
+        <div class="box2">Cancel or switch plans anytime</div>
+        <div class="box3">A place just for kids</div>
+        <div class="box4">For your phone, tablet, laptop, and TV</div>
+      </div>
+    </div>
+
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>What is Netflix?</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Netflix is a streaming service that offers a wide variety of
+            award-winning TV shows, movies, anime, documentaries, and more on
+            thousands of internet-connected devices.
+          </p>
+          <p>
+            You can watch as much as you want, whenever you want, without a
+            single ad – all for one low monthly price. There’s always something
+            new to discover, and new TV shows and movies are added every week!
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>How much does Netflix cost?</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Netflix has a variety of plans to suit your needs. Check the
+            official website for the latest pricing information.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>Where can I watch?</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You can watch Netflix on any internet-connected device, such as
+            smart TVs, game consoles, streaming media players, set-top boxes,
+            smartphones, tablets, and PCs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I cancel?</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You can cancel your Netflix membership online at any time. There are
+            no cancellation fees.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-item">
+          <h4>
+            Questions? Call
+            <span class="footer-phone-number"
+              ><a href="tel:000-800-919-1743">000-800-919-1743</a></span
+            >
+          </h4>
+          <ul>
+            <li><a href="#" aria-label="Go to FAQ page">FAQ</a></li>
+            <li><a href="#" aria-label="Go to Help Center">Help Center</a></li>
+            <li><a href="#" aria-label="Go to Terms of Use">Account</a></li>
+            <li>
+              <a href="#" aria-label="Go to Media Center">Media Center</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Investor Relations"
+                >Investor Relations</a
+              >
+            </li>
+            <li><a href="#" aria-label="Go to Jobs">Jobs</a></li>
+            <li>
+              <a href="#" aria-label="Go to Ways to Watch">Ways to Watch</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Terms of Use">Terms of Use</a>
+            </li>
+            <li><a href="#" aria-label="Go to Privacy">Privacy</a></li>
+            <li>
+              <a href="#" aria-label="Go to Cookie Preferences"
+                >Cookie Preferences</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Corporate Information"
+                >Corporate Information</a
+              >
+            </li>
+            <li><a href="#" aria-label="Go to Contact Us">Contact Us</a></li>
+            <li><a href="#" aria-label="Go to Speed Test">Speed Test</a></li>
+            <li>
+              <a href="#" aria-label="Go to Legal Notices">Legal Notices</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Only on Netflix">Only on Netflix</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <h5 class="last-text">Netflix India</h5>
+  </body>
+</html>
