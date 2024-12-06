@@ -194,12 +194,12 @@ button:hover {
   top: 84rem;
   left: 9vw;
   background-color: transparent;
-  gap:5px;
+  gap: 5px;
   display: flex;
   flex-direction: column;
 }
 
-H2 {
+h2 {
   text-align: center;
   margin-bottom: 7px;
   width: 36vw;
@@ -211,42 +211,71 @@ H2 {
   padding: 10px 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 10px;
-  height: 6vmin;
+  height: auto;
   width: 77vmax;
   background-color: #a4a0a02c;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
 }
+
 .faq-item:hover {
   background-color: #a4a0a074;
 }
+
 .faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  position: relative;
   background-color: transparent;
+  z-index: 10;
 }
 
 .faq-question span {
-  background-color: transparent;
   left: 2vmax;
   position: relative;
-}
-.toggle-btn:hover {
   background-color: transparent;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #555;
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition:0.3s ease, padding 0.3s ease;
+  background-color: 0.3s ease, color 0.3s ease;
   padding-left: 10px;
-  color: #a4a0a074;
+  z-index: 10;
+}
+.faq-answer p{
+  background-color:transparent;
 }
 
 .faq-answer.open {
-  max-height: 200px; /* Adjust based on your content’s height */
+  max-height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:transparent;
 }
+.faq-answer.open .p {
+  color: white;
+}
+
 .credit {
   position: absolute;
   top: 130vw;
@@ -274,10 +303,10 @@ H2 {
 }
 .bt-p {
   color: white;
-    z-index: 10;
-    font-size: 15px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    top: 45px;
-    position: relative;
-    margin-left: 15px;
+  z-index: 10;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  top: 45px;
+  position: relative;
+  margin-left: 15px;
 }

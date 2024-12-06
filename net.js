@@ -138,3 +138,22 @@ function changeIconToPlay() {
     </svg>
   `;
 }
+function toggleFAQ(button) {
+  const answerElement = button.parentElement.nextElementSibling;
+  const allAnswers = document.querySelectorAll('.faq-answer');
+
+  allAnswers.forEach(answer => {
+    if (answer !== answerElement) {
+      answer.classList.remove('open');
+    }
+  });
+
+  answerElement.classList.toggle('open');
+
+  if (answerElement.classList.contains('open')) {
+    button.textContent = '-';
+  } else {
+    button.textContent = '+';
+  }
+}
+
